@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-right: 1rem;
 }
 
 .navigation__link {
@@ -74,6 +75,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  transition: color 0.3s ease;
+  color: var(--orange-dark);
 }
 
 
@@ -95,8 +101,42 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  .donate-button {
+    background-color: var(--orange-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
+   .donate-button:hover {
+    background-color: var(--white);
+    color: var(--orange-dark);  
+    border: solid 1px #c05326;
+   }
+
+  .volonteer-button {
+    background-color: var(--white);
+    color: var(--orange-dark);
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+   .volonteer-button:hover {
+    background-color: var(--orange-dark);
+    color: var(--white);
+   }
 
 /* Content */
 
@@ -120,8 +160,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--white);
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -161,8 +204,30 @@ p {
 
 /* Article */
 
-.article {
+ .article {
+  display: flex;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(33,33,33,0.04);
   margin-bottom: 1rem;
+}
+ .article_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.main .article {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* title, summary (flexible), read-more */
+  gap: 0.5rem;
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(33,33,33,0.04);
+  align-items: start;
 }
 
 .article__title {
@@ -184,6 +249,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__read-more {
@@ -208,6 +274,7 @@ p {
 }
 
 .facebook-link {
+  text-align: end;
   color: var(--orange-dark);
 }
 
