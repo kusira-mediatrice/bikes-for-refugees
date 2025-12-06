@@ -208,6 +208,8 @@ p {
   display: flex;
   padding: 1rem;
   background: #fff;
+  border: solid var(--grey-light);
+  border-radius: 6px;
   box-shadow: 0 3px 10px rgba(33,33,33,0.04);
   margin-bottom: 1rem;
 }
