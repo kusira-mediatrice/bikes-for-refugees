@@ -17,10 +17,15 @@ The aim of the exercise is for your webpage to look like the following screensho
 ![Bike For Refugees: final design](https://github.com/Migracode-Barcelona/bikes-for-refugees/blob/main/bikes-for-refugees_final-design.png)
 
 Open the `index.html` file in your browser, and compare it to the image of the final result. What's different?
+The difference are:
+1.No style on the top Menu and the others coponents of the wireframe
+2.No images
+
 
 ### Exercise 1) Use semantic markup
 
 Open up Devtools and [choose the Accessibility tab](https://stackoverflow.com/questions/58988357/accessing-the-accessibility-tree-of-a-website) next to Layout (or behind the >> chevrons). Now start to replace the `<div>`s with semantic HTML tags. The visual render looks the same, but the API interprets the semantic HTML totally differently. Semantic HTML does stuff!
+![alt text](image.png)
 
 ### Exercise 2) Fix the broken images
 
